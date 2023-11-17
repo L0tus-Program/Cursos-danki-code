@@ -1,0 +1,39 @@
+.Heder {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+
+}
+
+
+.Header h1 {
+    color: aliceblue;
+}
+
+
+.Header ul li {
+    color: white;
+    margin: 20px;
+}
+
+.Header ul {
+
+    list-style: none;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    background-color: #ff22313a;
+    border-radius: 15px;
+}
+
+.button:hover {
+    width: 100px;
+    height: auto;
+}
