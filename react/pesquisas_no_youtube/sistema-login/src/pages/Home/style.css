@@ -1,15 +1,4 @@
-.icons {
-    width: 30pt;
-    height: auto;
-    margin-top: 50pt;
-    
-  }
-  
-  
-.icons:hover{
-    animation: pulse infinite 1s ease-in-out;
-    
-}
+
 .Login p{
     margin-top: 100px;
 }
@@ -39,9 +28,6 @@ text-align: center;
     padding: 10px;
 }
 
-.App-link {
-    color: #61dafb;
-}
 
 
 @keyframes pulse {

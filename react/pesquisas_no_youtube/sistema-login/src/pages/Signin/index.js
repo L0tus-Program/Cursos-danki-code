@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Log from "../../components/buttonLog";
 import './style.css';
 import ApexCharts from 'apexcharts';
+import Cli from "../../components/Cli";
 
 function Signin() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function Signin() {
       <div id="box-chart">
         <div id="chart"></div>
       </div>
+      <Cli/>
       <Log/>
     </section>
   );

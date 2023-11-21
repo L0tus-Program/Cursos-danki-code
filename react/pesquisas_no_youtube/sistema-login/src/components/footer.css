@@ -1,0 +1,17 @@
+.icons {
+    width: 30pt;
+    height: auto;
+    margin-top: 50pt;
+    
+  }
+  
+  
+.icons:hover{
+    animation: pulse infinite 1s ease-in-out;
+    
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+}

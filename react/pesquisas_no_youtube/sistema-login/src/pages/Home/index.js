@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import logo from './logo.png';
-import github from './github.svg';
+
 import './style.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-
-
+import Footer from '../../components/Footer';
 
 function Home() {
   
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const navigate = useNavigate();
+  
   function reque(event) {
     
     event.preventDefault(); // Evita que o formulário seja enviado normalmente (recarregar a página)
     console.log("Entrou request");
 
-    const apiUrl = 'http://62.72.63.140:5000/verificar_credenciais';
+    const apiUrl = 'http://62.72.63.140:5000/verificar_credenciais_dash';
     const contentType = 'application/json';
     let jsonData_key; // Declare as variáveis aqui
     let token;
@@ -91,7 +91,8 @@ function Home() {
         <p>
           Use e abuse da API porque não tem ninguém olhando. Isso é só um teste mesmo
         </p>
-        <a href='https://github.com/L0tus-Program/API_base_uso_Ronaldo' target='_blank' rel="noreferrer"><img src={github} className='icons' alt="github" /></a>
+       
+      <Footer/>
       </section>
    
       
