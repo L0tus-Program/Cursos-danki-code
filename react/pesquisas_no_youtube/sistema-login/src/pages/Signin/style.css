@@ -1,19 +1,30 @@
 .user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ocupa toda a altura da tela */
-  }
-  
-  #box-chart {
-    width: 80%; /* Largura relativa ao contêiner pai */
-    max-width: 600px; /* Largura máxima para grandes telas */
-    margin: auto; /* Centraliza horizontalmente */
-  }
-  
-  #chart {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    height: 400px; /* Altura fixa do gráfico */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+}
+
+.user h2 {
+  padding-top: 5pt;
+  padding-bottom: 50pt;
+}
+
+#box-chart {
+  width: 100%;
+  /* Largura relativa ao contêiner pai */
+  max-width: 600px;
+  /* Largura máxima para grandes telas */
+  margin: auto;
+  /* Centraliza horizontalmente */
+  border-style: dashed;
+}
+
+#chart {
+  width: 100%;
+  /* Ocupa toda a largura do contêiner */
+  height: 400px;
+  /* Altura fixa do gráfico */
+}

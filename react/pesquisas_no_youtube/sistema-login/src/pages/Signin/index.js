@@ -6,20 +6,27 @@ import Cli from "../../components/Cli";
 
 function Signin() {
   useEffect(() => {
-    const options = {
+    var options = {
+      series: [44, 55],
       chart: {
-        type: 'line'
+        width: 380,
+        type: 'pie',
       },
-      series: [{
-        name: 'sales',
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
-      }],
-      xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-      }
+      labels: ['Sucesso', 'Erro'],
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }]
     };
-    
-    const chart = new ApexCharts(document.querySelector("#chart"), options);
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();
 
     // Limpeza ao desmontar o componente
@@ -34,8 +41,8 @@ function Signin() {
       <div id="box-chart">
         <div id="chart"></div>
       </div>
-      <Cli/>
-      <Log/>
+      <Cli />
+      <Log />
     </section>
   );
 }

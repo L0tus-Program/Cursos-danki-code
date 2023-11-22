@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 import logo from './logo.png';
-
 import './style.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../components/Footer';
 
 function Home() {
-  
+
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const navigate = useNavigate();
-  
+
   function reque(event) {
-    
+
     event.preventDefault(); // Evita que o formulário seja enviado normalmente (recarregar a página)
     console.log("Entrou request");
 
-    const apiUrl = 'http://62.72.63.140:5000/verificar_credenciais_dash';
+    const apiUrl = 'https://chat.conexaoia.digital/verificar_credenciais_dash';
     const contentType = 'application/json';
     let jsonData_key; // Declare as variáveis aqui
     let token;
@@ -55,14 +54,14 @@ function Home() {
           }*/
           if (parsedPayload.email.toLowerCase() === email.toLowerCase()) {
             console.log("logou");
-           
-            
-            
+
+
+
             //alert("Logou");
-             // Redirecionamento para a página desejada
-             //<Link to="/signin">Sign In</Link>
-             navigate('/signin');
-            
+            // Redirecionamento para a página desejada
+            //<Link to="/signin">Sign In</Link>
+            navigate('/signin');
+
           }
 
         } catch (error) {
@@ -75,11 +74,11 @@ function Home() {
   }
 
   return (
-    
+
     <div className="Login">
-    
+
       <section className="Login-section">
-      <img src={logo} className="Login-logo" alt="logo" />
+        <img src={logo} className="Login-logo" alt="logo" />
         <p>
           Api OpenAAI
         </p>
@@ -91,15 +90,15 @@ function Home() {
         <p>
           Use e abuse da API porque não tem ninguém olhando. Isso é só um teste mesmo
         </p>
-       
-      <Footer/>
+
+        <Footer />
       </section>
-   
-      
-      
+
+
+
     </div>
-    
-    
+
+
   );
 }
 
