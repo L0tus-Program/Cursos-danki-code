@@ -3,6 +3,9 @@ import Log from "../../components/buttonLog";
 import './style.css';
 import ApexCharts from 'apexcharts';
 import Cli from "../../components/Cli";
+import DB from "../../components/buttonDB"
+import Footer from "../../components/Footer";
+
 
 function Signin() {
   useEffect(() => {
@@ -67,6 +70,8 @@ function Signin() {
       </div>
       <Cli />
       <Log />
+      <DB />
+      <Footer />
     </section>
   );
 }

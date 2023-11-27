@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Log() {
-  async function handleDownload() {
+function DB() {
+  async function backup() {
     try {
-      const apiUrl = 'https://chat.conexaoia.digital/all_log';
+      const apiUrl = 'https://chat.conexaoia.digital/backup';
       const senhaAPI = 'F14C7D7625414A3E5DA1811349667';
 
       const response = await fetch(apiUrl, {
@@ -18,7 +18,7 @@ function Log() {
       const url = window.URL.createObjectURL(new Blob([blob]));
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'log.txt');
+      link.setAttribute('download', 'openaai.db');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -30,9 +30,9 @@ function Log() {
 
   return (
     <div className="Button">
-      <button onClick={handleDownload}>Baixar Log</button>
+      <button onClick={backup}>Baixar Banco de Dados</button>
     </div>
   );
 }
 
-export default Log;
+export default DB;
