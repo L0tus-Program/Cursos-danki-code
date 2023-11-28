@@ -5,6 +5,9 @@ import ApexCharts from 'apexcharts';
 import Cli from "../../components/Cli";
 import DB from "../../components/buttonDB"
 import Footer from "../../components/Footer";
+import DesabilitaCliente from "../../components/desabilita_cliente";
+import AllTrue from "../../components/AllTrue";
+import AllFalse from "../../components/AllFalse";
 
 
 function Signin() {
@@ -71,7 +74,14 @@ function Signin() {
       <Cli />
       <Log />
       <DB />
+      <DesabilitaCliente/>
+      <AllTrue />
+      <AllFalse />
+
+
+
       <Footer />
+      
     </section>
   );
 }
