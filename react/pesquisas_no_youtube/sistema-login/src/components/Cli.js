@@ -33,16 +33,11 @@ function Cli() {
             .then(result => {
                 const jsonData = JSON.parse(result);
                 console.log(jsonData)
-                //alert(JSON.stringify(jsonData));
+                
                 const resultado = JSON.stringify(jsonData);
                 const divResultado = document.getElementById('resultadoPesquisa');
                 divResultado.innerHTML += `<div>${resultado}</div>`;
-                //const decodedPayload = atob(jsonData.token.split('.')[1]);
-                //const parsedPayload = JSON.parse(decodedPayload);
-                //console.log(parsedPayload);
-                // console.log(decodedPayload)
-                //token = decodedPayload;
-                //console.log(token)
+                
 
                 console.log(`Query executada com sucesso ${data}`)
 

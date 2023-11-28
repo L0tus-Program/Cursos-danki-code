@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import DesabilitaCliente from "../../components/desabilita_cliente";
 import AllTrue from "../../components/AllTrue";
 import AllFalse from "../../components/AllFalse";
+import Modal from "../../components/modal";
 
 
 function Signin() {
@@ -66,18 +67,18 @@ function Signin() {
   }, []); // Array de dependência vazio significa que o efeito roda apenas na montagem e desmontagem
 
   return (
+    
     <section className="user">
+
       <h2>Painel principal de usuario</h2>
       <div id="box-chart">
         <div id="chart"></div>
       </div>
-      <Cli />
-      <Log />
-      <DB />
-      <DesabilitaCliente/>
-      <AllTrue />
-      <AllFalse />
+      <div className="testes">
+      <Modal />
 
+      </div>
+      
 
 
       <Footer />

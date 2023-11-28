@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import './desabilita.css'
 
 
 
@@ -43,10 +43,12 @@ function DesabilitaCliente() {
     }
 
     return (
-        <form onSubmit={desabilita}>
+    <div id="main">
+        <form onSubmit={desabilita} className="form-desabilita">
             <input type="text" placeholder="Insira o código a ser desativado" value={codigo} onChange={(e) => setCodigo(e.target.value)}></input>
             <input type="submit" value="Enviar" />
         </form>
+    </div>
     );
 }
 

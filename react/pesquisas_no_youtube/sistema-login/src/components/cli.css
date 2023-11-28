@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh; /* Define a altura para ocupar toda a altura da tela */
+    
   }
   
   #resultadoPesquisa {
@@ -23,9 +23,9 @@
   }
   
   #cli {
-    width: 50%;
+    
     padding: 8px;
-    margin-bottom: 20px; /* Espaçamento inferior entre a entrada e o botão */
+   
   }
   
   #send_query {
