@@ -6,6 +6,7 @@ import DesabilitaCliente from './desabilita_cliente';
 import AllTrue from "./AllTrue";
 import AllFalse from "./AllFalse";
 import Log from './buttonLog';
+
 function Modal() {
   const [showModal, setShowModal] = useState(false);
 
@@ -33,6 +34,7 @@ function Modal() {
             <DesabilitaCliente/>
             <AllTrue />
             <AllFalse />
+         
             </div>
           </div>
         </div>

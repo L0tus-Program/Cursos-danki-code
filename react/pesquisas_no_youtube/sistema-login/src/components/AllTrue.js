@@ -14,6 +14,7 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
+  
 };
 
 function AllTrue() {
@@ -59,7 +60,7 @@ function AllTrue() {
   return (
     <>
       
-      <Button onClick={consulta}>Open modal</Button>
+      <Button onClick={consulta}>AllTrue</Button>
       <div>
         <Modal
           open={open}

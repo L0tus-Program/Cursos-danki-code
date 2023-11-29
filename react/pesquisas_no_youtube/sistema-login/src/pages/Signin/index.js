@@ -1,15 +1,9 @@
 import React, { useEffect } from "react";
-import Log from "../../components/buttonLog";
 import './style.css';
 import ApexCharts from 'apexcharts';
-import Cli from "../../components/Cli";
-import DB from "../../components/buttonDB"
 import Footer from "../../components/Footer";
-import DesabilitaCliente from "../../components/desabilita_cliente";
-import AllTrue from "../../components/AllTrue";
-import AllFalse from "../../components/AllFalse";
 import Modal from "../../components/modal";
-
+import AccountMenu from "../../components/Menu";
 
 function Signin() {
   useEffect(() => {
@@ -69,13 +63,14 @@ function Signin() {
   return (
     
     <section className="user">
-
+      <AccountMenu />
       <h2>Painel principal de usuario</h2>
       <div id="box-chart">
         <div id="chart"></div>
       </div>
       <div className="testes">
       <Modal />
+ 
 
       </div>
       
